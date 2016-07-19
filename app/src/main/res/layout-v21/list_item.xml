@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:elevation="0dp"
+    app:cardCornerRadius="3dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.coderming.newxyzreader.MyImageView
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:foreground="@drawable/grey_ripple"
+            android:src="@drawable/placeholder" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/article_author"
+            android:layout_marginBottom="@dimen/gap_grid"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="10sp"
+            android:paddingLeft="@dimen/gap_4dp"
+            android:paddingRight="@dimen/gap_4dp"
+            android:text="@string/author" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/article_title"
+            android:textColor="@color/colorPrimaryText"
+            android:paddingLeft="@dimen/gap_4dp"
+            android:paddingRight="@dimen/gap_4dp"
+            android:paddingBottom="@dimen/gap_4dp"
+            android:textSize="16sp"
+            android:text="@string/title" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
