@@ -40,7 +40,7 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
-    <style name="mormal_textview" parent="@android:style/TextAppearance.Widget.TextView">
+    <style name="normal_textview" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">sans-serif</item>

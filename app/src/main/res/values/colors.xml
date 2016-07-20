@@ -5,8 +5,8 @@
     <color name="colorAccent">#02bc4f</color>
     <color name="colorPrimaryLight">#f9f8f7</color>
 
-    <color name="colorPrimaryText">#212121</color>
-    <color name="colorSecondaryText">#929292</color>
+    <color name="colorPrimaryText">#EE000000</color>
+    <color name="colorSecondaryText">#AA000000</color>
 
     <color name="colorGray">#222222</color>
 
@@ -15,6 +15,6 @@
     <color name="black_overlay">#66000000</color>
     <color name="white_overlay">#66FFFFFF</color>
 
-    <color name="grey_ripple">#8ddd</color>
+    <color name="grey_ripple">#88dddddd</color>
 
 </resources>

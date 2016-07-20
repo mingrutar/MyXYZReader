@@ -25,7 +25,7 @@
             android:id="@+id/article_author"
             android:layout_marginBottom="@dimen/gap_grid"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:paddingLeft="@dimen/gap_4dp"
             android:paddingRight="@dimen/gap_4dp"
             android:text="@string/author" />

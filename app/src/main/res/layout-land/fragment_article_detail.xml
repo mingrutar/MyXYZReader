@@ -68,7 +68,7 @@
         app:cardCornerRadius="@dimen/gap_4dp">
         <TextView
             android:layout_height="wrap_content"
-            style="@style/mormal_textview"
+            style="@style/normal_textview"
             android:id="@+id/detail_article_text"
             android:textColor="@color/colorPrimaryText"
             android:text="@string/desc"

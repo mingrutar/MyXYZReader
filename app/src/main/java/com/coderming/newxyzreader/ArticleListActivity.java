@@ -20,6 +20,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -108,9 +109,15 @@ public class ArticleListActivity extends AppCompatActivity implements LoaderMana
 
         mRecyclerView.setAdapter(adapter);
         mRecyclerView.addItemDecoration(new SpacesItemDecoration(Math.round(getResources().getDimension(R.dimen.gap_grid))));
+
         Configuration configuration = getResources().getConfiguration();
         int screenWidthDp = configuration.screenWidthDp; //The current width of the available screen space, in dp units, corresponding to screen width resource qualifier.
-        int columnCount = screenWidthDp/130;                              //
+        int columnCount = 3;
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            columnCount = isTablet() ? 3 : 2;
+        } else {
+            columnCount = isTablet() ? 4 : 3;
+        }
         StaggeredGridLayoutManager layoutManager =
                 new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -130,6 +137,13 @@ public class ArticleListActivity extends AppCompatActivity implements LoaderMana
             // set an exit transition
 //            getWindow().setExitTransition(new Explode());
         }
+    }
+    private boolean isTablet() {
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        double screenWidthInch = displayMetrics.widthPixels / displayMetrics.xdpi;
+        double screenHeightInch = displayMetrics.heightPixels / displayMetrics.ydpi;
+        double diagonalInches = Math.sqrt(screenWidthInch * screenWidthInch + screenHeightInch * screenHeightInch);
+        return (diagonalInches >= 6.5);            // for tablet 3 or 2
     }
     boolean mRefreshIssued;
     private void refresh() {

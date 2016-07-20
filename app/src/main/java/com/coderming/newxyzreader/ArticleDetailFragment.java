@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.animation.FastOutSlowInInterpolator;
-import android.support.v7.widget.CardView;
 import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.transition.TransitionInflater;
@@ -69,6 +68,7 @@ public class ArticleDetailFragment extends Fragment {
     private TextView mArticle;
     private View mZoonButton;
     private View mFrameContainer;
+    View mCard;
 
     public ArticleDetailFragment() {
         // Required empty public constructor
@@ -100,7 +100,6 @@ public class ArticleDetailFragment extends Fragment {
             }
         }
     };
-    CardView mCard;
     boolean mSmall = true;
     private boolean mSymmetric = true;
     float mPivotDelta;
@@ -168,12 +167,12 @@ public class ArticleDetailFragment extends Fragment {
         mImageView.setOnClickListener(mFullScreenHandler);
 
         if (mIsPortrait){
-            mCard = (CardView) rootView.findViewById(R.id.card_text);
+            mCard = rootView.findViewById(R.id.card_text);
             mPivotDelta = mCard.getPivotY() * 2;
         } else {
-            mCard = (CardView) rootView.findViewById(R.id.anch_to);
+            mCard = rootView.findViewById(R.id.anch_to);
         }
-        mArticle.setOnTouchListener(mCardSizeChange);
+// remove size change        mArticle.setOnTouchListener(mCardSizeChange);
 
         return rootView;
     }
@@ -229,8 +228,9 @@ public class ArticleDetailFragment extends Fragment {
                 mFrameContainer.getViewTreeObserver().removeOnPreDrawListener(this);
                 if (mIsPortrait) {
                     int ht =  mFrameContainer.getHeight();
-                    mFrameContainer.getLayoutParams().width = ht;
-                    mImageView.getLayoutParams().width = ht;
+                    int wt = Math.max(Math.round(ht * ratio), ht);
+                    mFrameContainer.getLayoutParams().width = wt;
+                    mImageView.getLayoutParams().width = wt;
                 } else {
                     int ht = Math.round(mFrameContainer.getWidth() / ratio);
                     mImageView.getLayoutParams().height = ht;
