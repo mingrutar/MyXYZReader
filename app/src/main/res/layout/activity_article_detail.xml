@@ -13,8 +13,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
         android:background="@drawable/appbar_background"
         android:theme="@style/AppTheme.AppBarOverlay"
         android:elevation="6dp"

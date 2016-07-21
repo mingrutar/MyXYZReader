@@ -49,7 +49,6 @@ public class ArticleListActivity extends AppCompatActivity implements LoaderMana
             ItemsContract.Items.ASPECT_RATIO
     };
 
-
     private CursorRecyclerViewAdapter.MyAdapterOnClickHandler mOnClickListener = new
             CursorRecyclerViewAdapter.MyAdapterOnClickHandler() {
          @Override
@@ -86,13 +85,6 @@ public class ArticleListActivity extends AppCompatActivity implements LoaderMana
             outRect.right = space;
             outRect.bottom = space;
             outRect.top = space;
-
-//            // Add top margin only for the first item to avoid double space between items
-//            if (parent.getChildLayoutPosition(view) == 0) {
-//                outRect.top = space;
-//            } else {
-//                outRect.top = 0;
-//            }
         }
     }
     @Override
@@ -135,7 +127,6 @@ public class ArticleListActivity extends AppCompatActivity implements LoaderMana
             // set an enter transition
             getWindow().setEnterTransition(new Explode());
             // set an exit transition
-//            getWindow().setExitTransition(new Explode());
         }
     }
     private boolean isTablet() {
@@ -209,7 +200,7 @@ public class ArticleListActivity extends AppCompatActivity implements LoaderMana
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        Log.v(LOG_TAG, "onLoadFinished, #rec="+Integer.toString(data.getCount()) );
+//        Log.v(LOG_TAG, "onLoadFinished, #rec="+Integer.toString(data.getCount()) );
         ((CursorRecyclerViewAdapter)mRecyclerView.getAdapter()).swapCursor(data);
     }
 

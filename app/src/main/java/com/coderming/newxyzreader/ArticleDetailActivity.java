@@ -87,7 +87,7 @@ public class ArticleDetailActivity extends AppCompatActivity
             Uri uri = getIntent().getData();
             try {
                 mSelectedItemId = Long.parseLong(uri.getLastPathSegment());
-                Log.v(LOG_TAG, String.format(LOG_TAG, "+++3+onCreate: recId=%d,uri=%s", Long.toString(mSelectedItemId), uri.toString()));
+//                Log.v(LOG_TAG, String.format(LOG_TAG, "+++3+onCreate: recId=%d,uri=%s", Long.toString(mSelectedItemId), uri.toString()));
             } catch (Exception ex) {
                 Log.w(LOG_TAG, "fail to parse id: url="+uri.toString());
             }
@@ -132,7 +132,7 @@ public class ArticleDetailActivity extends AppCompatActivity
     ViewPager.OnPageChangeListener mPageListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrollStateChanged(int state) {
-            Log.v(LOG_TAG, String.format("-+++onPageScrollStateChanged, state=%d",state));
+ //           Log.v(LOG_TAG, String.format("-+++onPageScrollStateChanged, state=%d",state));
         }
         @Override
         public void onPageSelected(int position) {

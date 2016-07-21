@@ -43,7 +43,6 @@ public class CursorRecyclerViewAdapter
         mClickHandler = handler;
         mContext = context;
         mDataIsValid = false;
-//        mDataSetObserver = new NotifyingDataSetObserver();
    }
 
     @Override
@@ -83,14 +82,8 @@ public class CursorRecyclerViewAdapter
             return null;
         }
         final Cursor oldCursor = mCursor;
-//        if (oldCursor != null && mDataSetObserver != null){
-//            oldCursor.unregisterDataSetObserver(mDataSetObserver);
-//        }
         mCursor = newCursor;
         if (mCursor != null){
-//            if (mDataSetObserver != null){
-//                mCursor.registerDataSetObserver(mDataSetObserver);
-//            }
             rowIdColumn = newCursor.getColumnIndexOrThrow(ItemsContract.ItemsColumns._ID);
             mDataIsValid = true;
         } else {
@@ -107,11 +100,6 @@ public class CursorRecyclerViewAdapter
             return position;
         }
     }
-
-    @Override public void setHasStableIds(boolean hasStableIds) {
-        super.setHasStableIds(true);
-    }
-
 
     public class MyViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener {

@@ -39,16 +39,6 @@ public class ArticleDetailFragment extends Fragment {
     public static final String ARG_ITEM_ID = "item_id";
     private static final int LOADER_ID = 1;
 
-//    private static String[] QueryProjection = {
-//            ItemsContract.Items._ID,
-//            ItemsContract.Items.PUBLISHED_DATE,
-//            ItemsContract.Items.AUTHOR,
-//            ItemsContract.Items.THUMB_URL,
-//            ItemsContract.Items.PHOTO_URL,
-//            ItemsContract.Items.ASPECT_RATIO,
-//            ItemsContract.Items.BODY,
-//    };
-//
     static final int _ID = 0;
     static final int PUBLISHED_DATE = 1;
     static final int AUTHOR = 2;
@@ -78,7 +68,7 @@ public class ArticleDetailFragment extends Fragment {
         ArticleDetailFragment fragment = new ArticleDetailFragment();
         fragment.mCursor = cursor;
         fragment.mPosition = cursor.getPosition();
-        Log.v(LOG_TAG, "newInstance: mPosition="+Long.toString(fragment.mPosition));
+//        Log.v(LOG_TAG, "newInstance: mPosition="+Long.toString(fragment.mPosition));
         return fragment;
     }
     @Override
@@ -263,21 +253,6 @@ public class ArticleDetailFragment extends Fragment {
              return false;
         }
     };
-    //    @Override
-//    public void onAttach(Context context) {
-//        super.onAttach(context);
-//        if (context instanceof OnFragmentInteractionListener) {
-//            mListener = (OnFragmentInteractionListener) context;
-//        } else {
-//            throw new RuntimeException(context.toString()
-//                    + " must implement OnFragmentInteractionListener");
-//        }
-//    }
-//    @Override
-//    public void onDetach() {
-//        super.onDetach();
-//        mListener = null;
-//    }
 
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name

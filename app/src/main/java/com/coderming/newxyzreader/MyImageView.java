@@ -29,8 +29,6 @@ public class MyImageView extends ImageView {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int measuredWidth = getMeasuredWidth();
         int h = Math.round(measuredWidth / mAspectRatio);
-//        if ((measuredWidth / mAspectRatio - h) > 0)
-//            h++;
         setMeasuredDimension(measuredWidth, h);
     }
 }
