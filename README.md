@@ -17,12 +17,12 @@
 
 __Portrait, the last is a high resolution photo__
 
-![Portrait](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v1-portrait.png?raw=true)
-![portraitDetail](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v1-portrait2.png?raw=true)
+![Portrait](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-portrait_main.png?raw=true)
+![portraitDetail](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-portrait-details.png?raw=true)
 ![image](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v1-portrait-largeImage.png?raw=true)
 
 __Landscape views__
 
-![land](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v1-landscape-1.png?raw=true)
-![landDetail](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v1-landscape-detail.png?raw=true)
-![landImage](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v1-landscape-largeImage.png?raw=true)
+![land](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-landscape-list.png?raw=true)
+![landDetail](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-landscape-detail.png?raw=true)
+![landImage](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-landscape-largeimage.png?raw=true)
