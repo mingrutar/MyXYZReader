@@ -121,6 +121,5 @@
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-24.0.0" level="project" />
     <orderEntry type="library" exported="" name="glide-3.6.0" level="project" />
-    <orderEntry type="library" exported="" name="C__Users_linna_AppData_Local_Android_sdk_platforms_android_24_android_jar-android-24" level="project" />
   </component>
 </module>

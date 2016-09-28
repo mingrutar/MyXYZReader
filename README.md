@@ -1,4 +1,4 @@
-## ![logo](https://raw.githubusercontent.com/mingrutar/MyXYZReader/master/screenShots/ic_launcher.png) XYZ Reader ##
+## ![logo](https://raw.githubusercontent.com/mingrutar/MyXYZReader/master/screenShots/ic_launcher.png)   XYZ Reader ##
 
 ### See assignment details at ###
   https://classroom.udacity.com/nanodegrees/nd801/parts/80113454010/modules/403589875175461/lessons/4035898751239847/concepts/42926534400923#
