@@ -24,5 +24,5 @@ __Portrait, the last is a high resolution photo__
 __Landscape views__
 
 ![land](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-landscape-list.png?raw=true)
-![landDetail]()
+![landDetail](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-landscape-detail.png?raw=true)
 ![landImage](https://github.com/mingrutar/MyXYZReader/blob/master/screenShots/v2-lanscape-largeimage.png?raw=true)
